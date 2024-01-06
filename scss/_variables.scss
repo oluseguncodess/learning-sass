@@ -1,0 +1,12 @@
+// css variables - the dollar sign is used for storing variables.
+ // for some reason, the variables written in scss don't show up in the main css file 
+    $primary-color: #1D2B53; 
+
+    // creating maps - these are like objects in javascript. 
+    $font-weights: (
+        "regular": 400,
+        "medium": 500,
+        "bold": 700
+    );
+
+    //NOTE:  the variables have to come first so there's no compilation error.

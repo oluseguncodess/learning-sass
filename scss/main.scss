@@ -1,9 +1,22 @@
-// css variables - the dollar sign is used for storing variables.
-$primary-color: #1D2B53; 
+// This are used to import other scss files
+@import './reset';
+@import './variables';
 
-//the variables have to come first so there's no compilation error.
+// scss functions 
+@function weights($weights) {
+    @return map-get($font-weights, $weights)
+}
 
-// Note: plain css also works in sass files
 body {
-    background: $primary-color;
+    background-color: $primary-color;
+ }
+
+ .main {
+    width: 80%;
+    margin: 0 auto;
+
+    // Nesting and interpolation 
+    #{&}__paragraph {
+        font-weight: weights(medium)
+    }
  }
