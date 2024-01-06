@@ -1,0 +1,9 @@
+// css variables - the dollar sign is used for storing variables.
+$primary-color: #1D2B53; 
+
+//the variables have to come first so there's no compilation error.
+
+// Note: plain css also works in sass files
+body {
+    background: $primary-color;
+ }
