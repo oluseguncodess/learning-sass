@@ -1,6 +1,6 @@
 # Welcome 👋🏾
 
-I'm currently learning sass/scss and i'm document my progress here till I finish learning 
+I'm currently learning sass/scss and i'm documenting my progress here till I finish learning 
 
 ## What I have learnt 
 Here are the list of things i've learnt so far;
