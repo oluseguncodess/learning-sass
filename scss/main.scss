@@ -4,7 +4,15 @@
 
 // scss functions 
 @function weights($weights) {
-    @return map-get($font-weights, $weights)
+    @return map-get($font-weights, $weights);
+}
+
+// mixins - they are like utility classes and can take in arguments like functions.
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
 }
 
 body {
@@ -12,6 +20,7 @@ body {
  }
 
  .main {
+    @include flexCenter(column);
     width: 80%;
     margin: 0 auto;
 
