@@ -84,16 +84,14 @@ Nesting helps in scss because you don’t have to repeat yourself. Interpolation
 
 Here's a code snippet 👇🏾
 
-`` ` scss 
-
     .parentElement { 
 	code;
 
 	    .parentElement child element {
-		code;
-	}
-}
-`` `
+		    code;
+	    }
+    }
+
 
 **&**
 
