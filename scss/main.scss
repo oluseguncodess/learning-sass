@@ -15,17 +15,38 @@
     flex-direction: $direction;
 }
 
+// they can be used for media queries 
+@mixin mobile() {
+    @media (max-width: 800px) {
+        @content;
+    }
+}
+
 body {
     background-color: $primary-color;
  }
 
  .main {
-    @include flexCenter(column);
+    @include flexCenter(row);
     width: 80%;
     margin: 0 auto;
 
     // Nesting and interpolation 
-    #{&}__paragraph {
-        font-weight: weights(medium)
+    #{&}__paragraph1 {
+        font-weight: weights(medium);
+
+        &:hover {
+            color: pink;
+        }
     }
+
+    #{&}__paragraph2 {
+        @extend .main__paragraph1;
+    }
+
+    @include mobile() {
+        flex-direction: column;
+     }
  }
+
+ 
