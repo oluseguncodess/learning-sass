@@ -86,10 +86,10 @@ Here's a code snippet 👇🏾
 
 `` ` scss 
 
-.parentElement { 
+    .parentElement { 
 	code;
 
-	.parentElement child element {
+	    .parentElement child element {
 		code;
 	}
 }
