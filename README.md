@@ -36,8 +36,6 @@ Some benefit of scss includes;
 
 ### Variables in scss
 
----
-
 Variables are a way to store data so they can be referenced easily. To store variables in scss, we use the $ sign as opposed to the sign -- used in css
 
  e.g 👉🏾
@@ -51,3 +49,52 @@ Variables are a way to store data so they can be referenced easily. To store var
 * We however have to name those files differently so that the scss compiler can identify those files as partials. We also have to import the files to the main scss file. 
 
 * To name the partial files, we simply place an underscore _ in front of the name of the file and end it with .scss
+
+### Functions in scss
+
+Functions are like calculators. You give it a value/input and it runs the set of instructions placed in it, using the input you gave and finally, returns the result/output. 
+
+Here's a code snippet 👉🏾 - `` `scss
+@function nameOfFunction (input) {
+	@return code;
+}
+`` `
+
+### Mixins 
+
+Mixins are like utility classes. They are used to store repetitive codes. 
+
+Here's a code snippet 👇🏾
+
+`` `scss 
+
+@mixin nameOfMixin { 
+	repetitive code
+};
+
+`` `
+
+In order to use the repetitive code in scss, we use `@include` and the name of of the mixin. 
+
+`@extend` is used to copy the properties on an element and paste those properties to another element.
+
+### Nesting and interpolation
+
+Nesting helps in scss because you don’t have to repeat yourself. Interpolation is simply a way to concatenate code. In SCSS, we use `#{}`
+
+Here's a code snippet 👇🏾
+
+`` ` scss 
+
+.parentElement { 
+	code;
+
+	.parentElement child element {
+		code;
+	}
+}
+`` `
+
+**&**
+
+This is a parent selector in scss so you don’t repeat your code when referencing parent elements.
