@@ -20,7 +20,7 @@ To check out sass documentation 👉🏾 - [Sass documentation](sass-lang.com)
 
 ## My Documentation ✍🏾
 
-### What is Sass? 
+### <ins>What is Sass? </ins>What is Sass? 
 
 SCSS stands for Sassy Cascading style sheets. It’s a preprocessor that is useful for writing css in a better and more effective way. 
 
@@ -28,17 +28,17 @@ I say it’s a preprocessor that solves problems that arises with css.
 
 Some benefit of scss includes; 
 
-a. Writing clean code by eliminating the repetition of code
+* Writing clean code by eliminating the repetition of code
 
-b. Solving problems faced with css such as organizing code. 
+* Solving problems faced with css such as organizing code. 
 
-c. Writing programmable css.
+* Writing programmable css.
 
 ### Variables in scss
 
 Variables are a way to store data so they can be referenced easily. To store variables in scss, we use the $ sign as opposed to the sign -- used in css
 
-e.g 👇🏾
+e.g 👉🏾
 `` `sass
 $variable: code; 
 `` `
